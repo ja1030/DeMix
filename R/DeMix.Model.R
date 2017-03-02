@@ -148,7 +148,7 @@ DeMix.Model <- function(inputdata, groupid, givenpi,
      row.id <- row.names(newt)[apply(newt, 1, FUN = function(x) sum(x <= 0) == 0)]
  
      wgenes <- as.integer(dim(inputdata2)[1])
-     tmp <- 1
+     tmp <- 2
      rres2 <- .C("Bdemix", inputdata2,  as.integer(groupid), as.integer(nsub),
              as.integer(wgenes),  as.integer(cbit), as.integer(tmp), simu_givenpi,
              as.integer(ninteg), as.integer(niter), newovs, as.integer(pgenes),  rep(0, intx*3), rep(0, intx*3),

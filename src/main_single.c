@@ -158,7 +158,7 @@ void Bdemix(double *data, int *nGroup, int *nsamp, int *ngenes, int *ct, int *nS
       {
         gettumor(l, k, seed);    // Tumor sample mean/variance
         
-        if(k==1)
+        
         getnormal(l, k, seed);   // Normal sample mean/variance
       }
     }
